@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="898,1893" id="org.eu.cnampaint.framework" metadata="nsuml-1.4" initialized="true" tag="10" key="323030343131323520636E616D7061696E74">
+  <children xsi:type="editmodel:ClassEditModel" name="ToolType" location="657,50" size="158,183" id="org.eu.cnampaint.framework/ToolType" runTimeClassModel="ELLIPSE,LINE,POINT,RECTANGLE,SQUARE,NONE,CIRCLE">
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="RECTANGLE" id="org.eu.cnampaint.framework/ToolType#RECTANGLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="SQUARE" id="org.eu.cnampaint.framework/ToolType#SQUARE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ELLIPSE" id="org.eu.cnampaint.framework/ToolType#ELLIPSE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="CIRCLE" id="org.eu.cnampaint.framework/ToolType#CIRCLE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="LINE" id="org.eu.cnampaint.framework/ToolType#LINE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="POINT" id="org.eu.cnampaint.framework/ToolType#POINT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="NONE" id="org.eu.cnampaint.framework/ToolType#NONE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="org.eu.cnampaint.framework/ToolType#type"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,54"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="Rectangle" location="270,643" size="107,29" id="org.eu.cnampaint.framework/Rectangle" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.14/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.6/@sourceConnections.0" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject&lt;-org.eu.cnampaint.framework/Rectangle" source="//@children.1" target="//@children.12" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="53,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="113,75" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.7/@sourceConnections.1 //@children.11/@sourceConnections.1" name="BaseObject" location="358,50" size="115,29" id="org.eu.cnampaint.framework/BaseObject" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="76,54"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.0" name="GraphicObject" location="50,142" size="134,42" stereotype="interface" id="org.eu.cnampaint.framework/GraphicObject" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="129,252"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/Paintable&lt;-org.eu.cnampaint.framework/GraphicObject" source="//@children.3" target="//@children.7/@sourceConnections.0" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="67,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,39"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Square" location="279,768" size="89,29" id="org.eu.cnampaint.framework/Square" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="75,72"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/Rectangle&lt;-org.eu.cnampaint.framework/Square" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="46,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="53,29"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GraphicProperties" location="449,142" size="158,129" id="org.eu.cnampaint.framework/GraphicProperties" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="backgroundColor" id="org.eu.cnampaint.framework/GraphicProperties#backgroundColor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="borderColor" id="org.eu.cnampaint.framework/GraphicProperties#borderColor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="filling" id="org.eu.cnampaint.framework/GraphicProperties#filling"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="transparency" id="org.eu.cnampaint.framework/GraphicProperties#transparency"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="borderWidth" id="org.eu.cnampaint.framework/GraphicProperties#borderWidth"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,216"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/BaseObject&lt;-org.eu.cnampaint.framework/GraphicProperties" source="//@children.5" target="//@children.7/@sourceConnections.1" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,28"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Line" location="165,643" size="75,75" id="org.eu.cnampaint.framework/Line" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="52,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="x2" id="org.eu.cnampaint.framework/Line#x2"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="y2" id="org.eu.cnampaint.framework/Line#y2"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,216"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject&lt;-org.eu.cnampaint.framework/Line" source="//@children.6" target="//@children.1/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="37,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Draw" location="214,142" size="145,129" id="org.eu.cnampaint.framework/Draw" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="drawListeners" id="org.eu.cnampaint.framework/Draw#drawListeners"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layers" id="org.eu.cnampaint.framework/Draw#layers"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="activeLayerIndex" id="org.eu.cnampaint.framework/Draw#activeLayerIndex"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="org.eu.cnampaint.framework/Draw#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="width" id="org.eu.cnampaint.framework/Draw#width"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="145,270"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.3/@sourceConnections.0" id="org.eu.cnampaint.framework/Paintable&lt;-org.eu.cnampaint.framework/Draw" source="//@children.7" target="//@children.9" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="52,42" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.5/@sourceConnections.0" id="org.eu.cnampaint.framework/BaseObject&lt;-org.eu.cnampaint.framework/Draw" source="//@children.7" target="//@children.2" targetEnd="//@children.7/@sourceConnections.1/@children.1" sourceEnd="//@children.7/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="96,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="57,29" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.0" name="Ellipse" location="50,643" size="85,29" id="org.eu.cnampaint.framework/Ellipse" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="61,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject&lt;-org.eu.cnampaint.framework/Ellipse" source="//@children.8" target="//@children.1/@sourceConnections.0" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="42,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.7/@sourceConnections.0" name="Paintable" location="149,50" size="104,42" stereotype="interface" id="org.eu.cnampaint.framework/Paintable" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="53,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Layer" location="50,500" size="140,111" id="org.eu.cnampaint.framework/Layer" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="graphicObjects" id="org.eu.cnampaint.framework/Layer#graphicObjects"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="org.eu.cnampaint.framework/Layer#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="hidden" id="org.eu.cnampaint.framework/Layer#hidden"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="selected" id="org.eu.cnampaint.framework/Layer#selected"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,216"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.12/@sourceConnections.0" id="org.eu.cnampaint.framework/AbstractGraphicObject&lt;-org.eu.cnampaint.framework/Layer" source="//@children.10" target="//@children.11" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="109,146" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.0" name="AbstractGraphicObject" location="168,321" size="220,147" id="org.eu.cnampaint.framework/AbstractGraphicObject" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="71,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="graphicProperties" id="org.eu.cnampaint.framework/AbstractGraphicObject#graphicProperties"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="org.eu.cnampaint.framework/AbstractGraphicObject#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="org.eu.cnampaint.framework/AbstractGraphicObject#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="width" id="org.eu.cnampaint.framework/AbstractGraphicObject#width"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x" id="org.eu.cnampaint.framework/AbstractGraphicObject#x"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="y" id="org.eu.cnampaint.framework/AbstractGraphicObject#y"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,306"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/GraphicObject&lt;-org.eu.cnampaint.framework/AbstractGraphicObject" source="//@children.11" target="//@children.3" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="7,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,42"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/BaseObject&lt;-org.eu.cnampaint.framework/AbstractGraphicObject" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.1/@children.1" sourceEnd="//@children.11/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="216,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,29"/>
+      <bendpoints location="383,296" secondRelativeDimension="-21,217" firstRelativeDimension="33,-24"/>
+      <bendpoints location="404,296" secondRelativeDimension="0,217" firstRelativeDimension="51,-31"/>
+      <bendpoints location="404,117" secondRelativeDimension="0,38" firstRelativeDimension="109,-201"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="AbstractShapeGraphicObject" location="211,500" size="226,75" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="width" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject#width"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="167,72"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/AbstractGraphicObject&lt;-org.eu.cnampaint.framework/AbstractShapeGraphicObject" source="//@children.12" target="//@children.10/@sourceConnections.0" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="113,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Circle" location="52,768" size="80,29" id="org.eu.cnampaint.framework/Circle" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="75,72"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/Ellipse&lt;-org.eu.cnampaint.framework/Circle" source="//@children.13" target="//@children.8" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="44,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="40,29"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Point" location="407,643" size="76,29" id="org.eu.cnampaint.framework/Point" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.framework/AbstractShapeGraphicObject&lt;-org.eu.cnampaint.framework/Point" source="//@children.14" target="//@children.1/@sourceConnections.0" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="38,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showInterfaceStereotype="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

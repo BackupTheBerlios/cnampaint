@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="970,979" id="org.eu.cnampaint.swing" metadata="nsuml-1.4" initialized="true" zoom="0.9263698630136986" tag="10" key="323030343131323520636E616D7061696E74">
+  <children xsi:type="editmodel:ClassEditModel" name="NoOpAction" location="613,902" size="118,29" id="org.eu.cnampaint.swing/NoOpAction" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="108,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DelegatingAction" location="296,723" size="186,75" id="org.eu.cnampaint.swing/DelegatingAction" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="actionListener" id="org.eu.cnampaint.swing/DelegatingAction#actionListener"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="log" id="org.eu.cnampaint.swing/DelegatingAction#log"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,54"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ActionManager" location="244,902" size="139,57" id="org.eu.cnampaint.swing/ActionManager" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="actionMap" id="org.eu.cnampaint.swing/ActionManager#actionMap"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,72"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DrawArea" location="50,382" size="277,291" id="org.eu.cnampaint.swing/DrawArea" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="log" id="org.eu.cnampaint.swing/DrawArea#log"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="draw" id="org.eu.cnampaint.swing/DrawArea#draw"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="currentGraphicObject" id="org.eu.cnampaint.swing/DrawArea#currentGraphicObject"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="defaultGraphicProperties" id="org.eu.cnampaint.swing/DrawArea#defaultGraphicProperties"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mouseBehaviors" id="org.eu.cnampaint.swing/DrawArea#mouseBehaviors"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="selectedGraphicObjects" id="org.eu.cnampaint.swing/DrawArea#selectedGraphicObjects"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lastMouseBehavior" id="org.eu.cnampaint.swing/DrawArea#lastMouseBehavior"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="random" id="org.eu.cnampaint.swing/DrawArea#random"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="selectionKeyListener" id="org.eu.cnampaint.swing/DrawArea#selectionKeyListener"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="selectionMouseListener" id="org.eu.cnampaint.swing/DrawArea#selectionMouseListener"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="toolType" id="org.eu.cnampaint.swing/DrawArea#toolType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="antialiasing" id="org.eu.cnampaint.swing/DrawArea#antialiasing"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="creationMode" id="org.eu.cnampaint.swing/DrawArea#creationMode"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="draggingSelection" id="org.eu.cnampaint.swing/DrawArea#draggingSelection"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="163,270"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MnemonicUtils" location="727,723" size="166,75" id="org.eu.cnampaint.swing/MnemonicUtils" runTimeClassModel="NO_MNEMONIC,MNEMONIC_HINT">
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="NO_MNEMONIC" id="org.eu.cnampaint.swing/MnemonicUtils#NO_MNEMONIC"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="MNEMONIC_HINT" id="org.eu.cnampaint.swing/MnemonicUtils#MNEMONIC_HINT"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ActionHandler" location="655,382" size="196,147" id="org.eu.cnampaint.swing/ActionHandler" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="actionLoader" id="org.eu.cnampaint.swing/ActionHandler#actionLoader"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="application" id="org.eu.cnampaint.swing/ActionHandler#application"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="drawListener" id="org.eu.cnampaint.swing/ActionHandler#drawListener"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="log" id="org.eu.cnampaint.swing/ActionHandler#log"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="messageHelper" id="org.eu.cnampaint.swing/ActionHandler#messageHelper"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="random" id="org.eu.cnampaint.swing/ActionHandler#random"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="159,360"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MessageHelper" location="50,902" size="144,57" id="org.eu.cnampaint.swing/MessageHelper" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="commonTitle" id="org.eu.cnampaint.swing/MessageHelper#commonTitle"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="154,108"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DefaultFileFilter" location="532,723" size="145,93" id="org.eu.cnampaint.swing/DefaultFileFilter" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="extensions" id="org.eu.cnampaint.swing/DefaultFileFilter#extensions"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" id="org.eu.cnampaint.swing/DefaultFileFilter#description"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fileFilter" id="org.eu.cnampaint.swing/DefaultFileFilter#fileFilter"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,72"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ActionFactory" location="433,902" size="130,29" id="org.eu.cnampaint.swing/ActionFactory" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,90"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MainFrame" location="50,723" size="196,129" id="org.eu.cnampaint.swing/MainFrame" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel">
+      <children xsi:type="editmodel:AttributeEditModel" name="actionManager" id="org.eu.cnampaint.swing/MainFrame#actionManager"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="application" id="org.eu.cnampaint.swing/MainFrame#application"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="drawArea" id="org.eu.cnampaint.swing/MainFrame#drawArea"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="log" id="org.eu.cnampaint.swing/MainFrame#log"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="messageHelper" id="org.eu.cnampaint.swing/MainFrame#messageHelper"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="83,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LineMouseBehavior" location="475,303" size="169,29" id="org.eu.cnampaint.swing/LineMouseBehavior" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.swing/RectangularMouseBehavior&lt;-org.eu.cnampaint.swing/LineMouseBehavior" source="//@children.10" target="//@children.12/@sourceConnections.0" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="84,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0" name="RectangularMouseBehavior" location="241,142" size="218,111" id="org.eu.cnampaint.swing/RectangularMouseBehavior" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="drawArea" id="org.eu.cnampaint.swing/RectangularMouseBehavior#drawArea"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="log" id="org.eu.cnampaint.swing/RectangularMouseBehavior#log"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="startX" id="org.eu.cnampaint.swing/RectangularMouseBehavior#startX"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="startY" id="org.eu.cnampaint.swing/RectangularMouseBehavior#startY"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="160,144"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.swing/MouseBehavior&lt;-org.eu.cnampaint.swing/RectangularMouseBehavior" source="//@children.11" target="//@children.13" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="107,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,42"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CircleMouseBehavior" location="50,303" size="178,29" id="org.eu.cnampaint.swing/CircleMouseBehavior" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.14/@sourceConnections.0 //@children.10/@sourceConnections.0" id="org.eu.cnampaint.swing/RectangularMouseBehavior&lt;-org.eu.cnampaint.swing/CircleMouseBehavior" source="//@children.12" target="//@children.11" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="89,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="109,111" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.0" name="MouseBehavior" location="279,50" size="141,42" stereotype="interface" id="org.eu.cnampaint.swing/MouseBehavior" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SquareMouseBehavior" location="258,303" size="187,29" id="org.eu.cnampaint.swing/SquareMouseBehavior" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="136,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.swing/RectangularMouseBehavior&lt;-org.eu.cnampaint.swing/SquareMouseBehavior" source="//@children.14" target="//@children.12/@sourceConnections.0" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manual" autoLocated="true">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.16/@sourceConnections.0" name="ActionLoader" location="427,382" size="128,42" stereotype="interface" id="org.eu.cnampaint.swing/ActionLoader" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="50,54"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MessageSourceActionLoader" location="377,474" size="228,93" id="org.eu.cnampaint.swing/MessageSourceActionLoader" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="179,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="MNEMONIC" id="org.eu.cnampaint.swing/MessageSourceActionLoader#MNEMONIC"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="log" id="org.eu.cnampaint.swing/MessageSourceActionLoader#log"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="messageSource" id="org.eu.cnampaint.swing/MessageSourceActionLoader#messageSource"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,72"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="org.eu.cnampaint.swing/ActionLoader&lt;-org.eu.cnampaint.swing/MessageSourceActionLoader" source="//@children.16" target="//@children.15" targetEnd="//@children.16/@sourceConnections.0/@children.1" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="116,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="65,41"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
