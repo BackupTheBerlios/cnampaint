@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    $Id: project.xml,v 1.3 2005/01/04 16:09:48 romale Exp $
+    $Id: project.xml,v 1.4 2005/01/25 15:56:45 romale Exp $
 -->
 <project>
     <pomVersion>3</pomVersion>
@@ -8,7 +8,7 @@
     <name>CnamPaint</name>
     <groupId>cnampaint</groupId>
 
-    <currentVersion>1.0</currentVersion>
+    <currentVersion>1.0.1</currentVersion>
     <organization>
         <name>Alexandre ROMAN</name>
         <url>http://cnampaint.berlios.de</url>
