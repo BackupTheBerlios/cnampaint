@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: CircleMouseBehavior.java,v 1.1 2005/01/03 23:51:54 romale Exp $
+ * $Id: CircleMouseBehavior.java,v 1.2 2005/01/25 15:57:15 romale Exp $
  */
 
 
@@ -41,9 +41,9 @@ import org.eu.cnampaint.framework.Circle;
  * Comportement de souris pour un cercle.
  *
  * @author alex
- * @version $Revision: 1.1 $, $Date: 2005/01/03 23:51:54 $
+ * @version $Revision: 1.2 $, $Date: 2005/01/25 15:57:15 $
  */
-class CircleMouseBehavior extends RectangularMouseBehavior {
+public class CircleMouseBehavior extends RectangularMouseBehavior {
     //~ Constructeurs ----------------------------------------------------------
 
     public CircleMouseBehavior(final DrawArea drawArea) {

@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: LineMouseBehavior.java,v 1.1 2005/01/03 23:51:54 romale Exp $
+ * $Id: LineMouseBehavior.java,v 1.2 2005/01/25 15:57:15 romale Exp $
  */
 
 
@@ -41,9 +41,9 @@ import org.eu.cnampaint.framework.Line;
  * Comportement de souris pour une ligne.
  *
  * @author alex
- * @version $Revision: 1.1 $, $Date: 2005/01/03 23:51:54 $
+ * @version $Revision: 1.2 $, $Date: 2005/01/25 15:57:15 $
  */
-class LineMouseBehavior extends RectangularMouseBehavior {
+public class LineMouseBehavior extends RectangularMouseBehavior {
     //~ Constructeurs ----------------------------------------------------------
 
     public LineMouseBehavior(final DrawArea drawArea) {
