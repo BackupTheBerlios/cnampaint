@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: ActionHandler.java,v 1.1 2005/01/03 23:51:54 romale Exp $
+ * $Id: ActionHandler.java,v 1.2 2005/01/04 09:20:30 romale Exp $
  */
 
 
@@ -72,7 +72,7 @@ import javax.swing.SpinnerNumberModel;
  * Gestionnaire d'évènements de l'application.
  *
  * @author alex
- * @version $Revision: 1.1 $, $Date: 2005/01/03 23:51:54 $
+ * @version $Revision: 1.2 $, $Date: 2005/01/04 09:20:30 $
  */
 public class ActionHandler {
     //~ Champs d'instance ------------------------------------------------------
@@ -102,7 +102,8 @@ public class ActionHandler {
             messageSource.getMessage("app.titre") + ' ' +
             messageSource.getMessage("app.version") + " build " +
             messageSource.getMessage("build.number") + '\n' +
-            messageSource.getMessage("app.copyright"),
+            messageSource.getMessage("app.copyright") + '\n' +
+            messageSource.getMessage("app.license"),
             messageSource.getMessage("action.aPropos"));
     }
 
