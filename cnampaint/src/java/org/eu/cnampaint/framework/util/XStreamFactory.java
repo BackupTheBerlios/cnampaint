@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: XStreamFactory.java,v 1.1 2005/01/03 23:51:54 romale Exp $
+ * $Id: XStreamFactory.java,v 1.2 2005/01/04 09:19:53 romale Exp $
  */
 
 
@@ -41,6 +41,7 @@ import org.eu.cnampaint.framework.Draw;
 import org.eu.cnampaint.framework.Ellipse;
 import org.eu.cnampaint.framework.Layer;
 import org.eu.cnampaint.framework.Line;
+import org.eu.cnampaint.framework.Point;
 import org.eu.cnampaint.framework.Rectangle;
 import org.eu.cnampaint.framework.Square;
 
@@ -49,7 +50,7 @@ import org.eu.cnampaint.framework.Square;
  * Classe utilitaire servant à la construction d'objets <tt>XStream</tt>.
  *
  * @author alex
- * @version $Revision: 1.1 $, $Date: 2005/01/03 23:51:54 $
+ * @version $Revision: 1.2 $, $Date: 2005/01/04 09:19:53 $
  */
 public final class XStreamFactory {
     //~ Constructeurs ----------------------------------------------------------
@@ -68,6 +69,7 @@ public final class XStreamFactory {
         xstream.alias("rectangle", Rectangle.class);
         xstream.alias("ellipse", Ellipse.class);
         xstream.alias("line", Line.class);
+        xstream.alias("point", Point.class);
 
         return xstream;
     }
