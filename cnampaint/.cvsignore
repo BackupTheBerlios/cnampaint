@@ -2,3 +2,5 @@ target
 .classpath
 .project
 build.xml
+javadoc*
+velocity.log
