@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * $Id: DrawArea.java,v 1.1 2005/01/03 23:51:54 romale Exp $
+ * $Id: DrawArea.java,v 1.2 2005/01/04 09:21:32 romale Exp $
  */
 
 
@@ -69,7 +69,7 @@ import javax.swing.SwingUtilities;
  * Zone de dessin.
  *
  * @author alex
- * @version $Revision: 1.1 $, $Date: 2005/01/03 23:51:54 $
+ * @version $Revision: 1.2 $, $Date: 2005/01/04 09:21:32 $
  */
 public class DrawArea extends JComponent {
     //~ Champs d'instance ------------------------------------------------------
@@ -290,14 +290,14 @@ public class DrawArea extends JComponent {
             getCurrentGraphicObject().paint(g2);
         }
 
-        // configuration du contexte graphique pour le dessin des objets sélectionnés
-        g2.setColor(Color.RED);
-        g2.setStroke(new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
-                BasicStroke.JOIN_MITER, 10.0f, new float[] { 10.0f }, 0));
-
         if (ToolType.NONE.equals(getToolType())) {
             // mode sélection
             // dessin d'un cadre autour de chaque objet graphique sélectionné
+            // configuration du contexte graphique pour le dessin des objets sélectionnés
+            g2.setColor(Color.RED);
+            g2.setStroke(new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
+                    BasicStroke.JOIN_MITER, 10.0f, new float[] { 10.0f }, 0));
+
             for (final Iterator i = selectedGraphicObjects.values().iterator();
                     i.hasNext();) {
                 final GraphicObject go     = (GraphicObject) i.next();
@@ -334,9 +334,9 @@ public class DrawArea extends JComponent {
                 deleteSelectedGraphicObjects();
 
                 break;
-                
-                default:
-                	return;
+
+            default:
+                return;
             }
         }
     }
