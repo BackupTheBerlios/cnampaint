@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    $Id: maven.xml,v 1.1 2005/01/03 23:51:54 romale Exp $
+-->
+<project xmlns:j="jelly:core" default="run">
+
+<property file="${user.home}/.tpjava-build.properties"/>
+<property file="${user.home}/.build.properties"/>
+
+
+<preGoal name="jalopy:format">
+  <fixcrlf srcDir="${maven.src.dir}" eol="lf" tab="remove" tablength="4" encoding="ISO-8859-1">
+    <include name="**/*.java"/>
+    <include name="**/*.jsp"/>
+    <include name="**/*.jspf"/>
+    <include name="**/*.js"/>
+    <include name="**/*.css"/>
+    <include name="**/*.xml"/>
+    <include name="**/*.properties"/>
+    <include name="**/*.txt"/>
+  </fixcrlf>
+</preGoal>
+
+
+<postGoal name="clean:clean">
+  <delete>
+    <fileset dir="${basedir}">
+      <include name="project.xml.md5"/>
+      <include name="*snapshot-version"/>
+      <include name="bin"/>
+      <include name=".classpath"/>
+      <include name=".project"/>
+      <include name="**/jcoverage.ser"/>
+      <include name="build.xml"/>
+      <include name="**/*.*~"/>
+      <include name="**/*.log*"/>
+      <include name="**/*.class*"/>
+    </fileset>
+  </delete>
+</postGoal>
+
+
+<preGoal name="dist:build-src">
+  <fileset dir="${basedir}" id="dist.src.files">
+    <include name="jalopy.xml"/>
+    <include name="checkstyle.xml"/>
+    <include name="docs/**"/>
+  </fileset>
+
+  <property name="maven.dist.src.archive.dir" value="target/src"/>
+  <copy todir="${maven.dist.src.archive.dir}/${maven.final.name}">
+    <fileset refid="dist.src.files"/>
+  </copy>
+</preGoal>
+
+
+<postGoal name="java:compile">
+  <propertyfile file="${maven.build.dest}/build.properties" comment="Build informations">
+    <entry key="build.number" type="date" default="now" pattern="yyyyMMdd"/>
+    <entry key="build.user" value="${maven.username}"/>
+  </propertyfile>
+</postGoal>
+
+
+<!--
+  cible par défaut
+-->
+<goal name="default">
+  <attainGoal name="run"/>
+</goal>
+
+
+<!--
+  installation de la variable MAVEN_REPO dans Eclipse,
+  qui pointe sur le dossier utilisateur contenant les
+  bibliothèques téléchargées par Maven
+-->
+<goal name="eclipse:setup">
+  <echo>Vous devez redémarrer Eclipse pour que
+  les changements soient pris en compte.</echo>
+  <attainGoal name="eclipse:add-maven-repo"/>
+</goal>
+
+
+<!--
+  mise à jour du plugin Maven pour JNLP :
+  la version 1.4 comporte des bugs
+-->
+<goal name="jnlp:setup">
+  <echo>Installation du plugin Maven JNLP.</echo>
+  <j:set var="artifactId" value="maven-jnlp-plugin"/>
+  <j:set var="groupId" value="maven"/>
+  <j:set var="version" value="1.4.1"/>
+  <attainGoal name="plugin:download"/>
+</goal>
+
+
+<!--
+  création d'un descripteur JNLP pour une utilisation
+  en local : utilisé par les sous-projets JavaWebStart
+  pour les tester sans le déploiement sur un serveur web
+-->
+<goal name="jnlp:local">
+  <echo>Création d'un descripteur JNLP pour une utilisation en local.</echo>
+
+  <!-- on teste si l'OS est un Windows -->
+  <condition property="isWindows" value="true">
+    <contains string="${os.name}" substring="windows" casesensitive="false"/>
+  </condition>
+
+  <!--
+    si l'OS est un Windows, le protocole file dans les URL ne doit
+    contenir qu'un seul slash ('/'), alors que sous les autres OS
+    (comme les Unix-like) il y en a deux.
+  -->
+  <j:choose>
+    <j:when test="${isWindows}">
+      <echo>Système d'exploitation de famille Windows</echo>
+      <j:set var="maven.jnlp.http.codebase"
+        value="file:/${maven.build.dir}/jnlp"/>
+    </j:when>
+    <j:otherwise>
+      <j:set var="maven.jnlp.http.codebase"
+        value="file://${maven.build.dir}/jnlp"/>
+    </j:otherwise>
+  </j:choose>
+  <attainGoal name="jnlp"/>
+</goal>
+
+
+<!--
+  lancement du projet avec Java Web Start
+-->
+<goal name="jnlp:local-run" prereqs="jnlp:local">
+  <exec executable="javaws" dir="${maven.jnlp.dir}">
+    <arg line="${pom.artifactId}.jnlp"/>
+  </exec>
+</goal>
+
+
+<!--
+  création d'un keystore s'il n'en existe pas
+-->
+<preGoal name="jnlp:generate-jnlp">
+  <available file="${maven.jnlp.signjar.store}"
+    property="maven.jnlp.store.exists"/>
+  <j:choose>
+    <j:when test="${maven.jnlp.store.exists}">
+      <echo>Un keystore existe déjà: ${maven.jnlp.signjar.store}.</echo>
+    </j:when>
+    <j:otherwise>
+      <echo>Création d'un keystore: ${maven.jnlp.signjar.store}.</echo>
+      <attainGoal name="jnlp:generate-keystore"/>
+    </j:otherwise>
+  </j:choose>
+</preGoal>
+
+
+<!--
+  création du dossier contenant le keystore
+-->
+<preGoal name="jnlp:generate-keystore">
+  <mkdir dir="${basedir}/target"/>
+</preGoal>
+
+
+<!--
+  exécution du projet
+-->
+<goal name="run" prereqs="java:jar-resources,java:compile">
+  <path id="cp">
+    <pathelement location="${maven.build.dest}"/>
+    <path refid="maven.dependency.classpath"/>
+  </path>
+  <java classname="${maven.jar.mainclass}" classpathref="cp" fork="true"/>
+</goal>
+
+</project>
