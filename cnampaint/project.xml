@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    $Id: project.xml,v 1.1 2005/01/03 23:51:54 romale Exp $
+    $Id: project.xml,v 1.2 2005/01/04 14:49:23 romale Exp $
 -->
 <project>
     <pomVersion>3</pomVersion>
@@ -11,14 +11,14 @@
     <currentVersion>1.0</currentVersion>
     <organization>
         <name>CnamPaint</name>
-        <url>http://cnampaint.eu.org</url>
+        <url>http://cnampaint.berlios.de</url>
     </organization>
 
     <inceptionYear>2005</inceptionYear>
 
     <package>org.eu.cnampaint</package>
 
-    <url>http://cnampaint.eu.org</url>
+    <url>http://cnampaint.berlios.de</url>
     <issueTrackingUrl>http://developer.berlios.de/bugs/?group_id=2789</issueTrackingUrl>
     <siteAddress>shell.berlios.de</siteAddress>
     <siteDirectory>/home/groups/cnampaint/htdocs</siteDirectory>
@@ -29,6 +29,14 @@
         <connection>scm:cvs:pserver:anonymous@cvs.berlios.de:/cvsroot/cnampaint:cnampaint</connection>
         <developerConnection>scm:cvs:ext:${maven.username}@cvs.berlios.de:/cvsroot/cnampaint:cnampaint</developerConnection>
     </repository>
+
+    <versions>
+        <version>
+            <id>1.0</id>
+            <name>1.0</name>
+            <tag>CNAMPAINT_1_0</tag>
+        </version>
+    </versions>
 
     <developers>
         <developer>
