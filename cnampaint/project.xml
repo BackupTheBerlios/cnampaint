@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    $Id: project.xml,v 1.4 2005/01/25 15:56:45 romale Exp $
+    $Id: project.xml,v 1.5 2005/01/25 16:22:04 romale Exp $
 -->
 <project>
     <pomVersion>3</pomVersion>
@@ -32,6 +32,11 @@
     </repository>
 
     <versions>
+        <version>
+            <id>1.0.1</id>
+            <name>1.0.1</name>
+            <tag>CNAMPAINT_1_0_1</tag>
+        </version>
         <version>
             <id>1.0</id>
             <name>1.0</name>
