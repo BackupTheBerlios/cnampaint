@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    $Id: navigation.xml,v 1.1 2005/01/04 16:09:48 romale Exp $
+-->
+<project>
+<body>
+<links>
+<item name="CnamPaint on Berlios" href="https://developer.berlios.de/projects/cnampaint/"/>
+<item name="Toulon Linux" href="http://toulonlinux.apinc.org"/>
+</links>
+
+<menu name="CnamPaint">
+<item name="Accueil" href="index.html"/>
+<item name="Captures d'écran" href="screenshots.html"/>
+<item name="WebStart" href="webstart.html"/>
+<item name="Téléchargements" href="downloads.html"/>  
+</menu>
+
+<search/>
+</body>
+</project>

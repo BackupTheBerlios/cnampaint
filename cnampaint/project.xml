@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    $Id: project.xml,v 1.2 2005/01/04 14:49:23 romale Exp $
+    $Id: project.xml,v 1.3 2005/01/04 16:09:48 romale Exp $
 -->
 <project>
     <pomVersion>3</pomVersion>
@@ -10,7 +10,7 @@
 
     <currentVersion>1.0</currentVersion>
     <organization>
-        <name>CnamPaint</name>
+        <name>Alexandre ROMAN</name>
         <url>http://cnampaint.berlios.de</url>
     </organization>
 
@@ -26,8 +26,9 @@
     <distributionDirectory>/home/groups/cnampaint/htdocs/maven</distributionDirectory>
 
     <repository>
-        <connection>scm:cvs:pserver:anonymous@cvs.berlios.de:/cvsroot/cnampaint:cnampaint</connection>
-        <developerConnection>scm:cvs:ext:${maven.username}@cvs.berlios.de:/cvsroot/cnampaint:cnampaint</developerConnection>
+        <connection>scm:cvs:pserver:anonymous@cvs.cnampaint.berlios.de:/cvsroot/cnampaint:cnampaint</connection>
+        <developerConnection>scm:cvs:ext:${maven.username}@cvs.cnampaint.berlios.de:/cvsroot/cnampaint:cnampaint</developerConnection>
+        <url>http://cvs.berlios.de/cgi-bin/viewcvs.cgi/cnampaint/cnampaint</url>
     </repository>
 
     <versions>
